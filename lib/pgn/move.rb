@@ -127,8 +127,8 @@ module PGN
 
     def castle=(val)
       if val
-        @castle = "K" if val == "O-O"
-        @castle = "Q" if val == "O-O-O"
+        @castle = +"K" if val == "O-O"
+        @castle = +"Q" if val == "O-O-O"
         @castle.downcase! if self.black?
       end
     end

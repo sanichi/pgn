@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    pgn (0.2.0)
+    pgn (1.0.1)
       whittle
 
 GEM
