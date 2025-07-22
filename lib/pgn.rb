@@ -18,9 +18,10 @@ module PGN
   # @see http://www.chessclub.com/help/PGN-spec PGN Specification
   #
   def self.parse(pgn, encoding = Encoding::ISO_8859_1)
-    pgn.force_encoding(encoding) if encoding
+    dup = pgn.dup # in case pgn is frozen
+    dup.force_encoding(encoding) if encoding
 
-    PGN::Parser.new.parse(pgn).map do |game|
+    PGN::Parser.new.parse(dup).map do |game|
       PGN::Game.new(game[:moves], game[:tags], game[:result])
     end
   end

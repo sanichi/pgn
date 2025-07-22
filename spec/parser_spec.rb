@@ -79,7 +79,6 @@ describe PGN do
       variation[0].should == 'Nxf3'
     end
 
-
     it 'should handle files with starting position' do
       games = PGN.parse(File.read('./spec/pgn_files/fen.pgn'))
       game = games.first
