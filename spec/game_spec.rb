@@ -1,5 +1,3 @@
-require "spec_helper"
-
 describe PGN::Game do
   describe "#positions" do
     it "should not raise an error" do

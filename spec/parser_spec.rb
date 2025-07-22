@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe PGN do
   describe '.parse' do
     it 'should return a list of games' do

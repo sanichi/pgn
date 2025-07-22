@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe PGN::Position do
 
   describe "start" do

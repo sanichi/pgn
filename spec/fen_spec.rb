@@ -1,5 +1,3 @@
-require "spec_helper"
-
 describe PGN::FEN do
   describe "castling availability" do
     it "should remove all castling availabilitiy after castling" do
