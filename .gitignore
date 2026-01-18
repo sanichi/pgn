@@ -3,6 +3,7 @@
 .bundle
 .config
 .yardoc
+Gemfile.bak
 InstalledFiles
 _yardoc
 coverage
